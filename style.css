@@ -2,8 +2,16 @@ body{
     margin:0;
     font-family: 'Poppins', sans-serif;
 }
+a{
+    text-decoration:none
+}
+h2,h3,h4,h5,h6{
+    margin:0
+}
 h1{
     font-size: 50px;
+    margin: 0;
+    font-weight: 700;
 }
 p{
     color: dimgray;
@@ -12,6 +20,33 @@ p{
 section{
     min-height:500px
 }
+
+nav{
+    width: 80%;
+    margin:auto;
+    min-height: 50px;;
+}
+nav ul{
+  width: 40%;
+  float: right;
+  clear: both;
+}
+
+nav ul li{
+    list-style: none;
+
+    float: left;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:gray;
+    display: block;
+    padding:10px 20px;
+    font-weight: 700;
+}
+
 
 .name-highlight{
     color: orange;
@@ -24,25 +59,100 @@ section{
     float: left;
 }
 .half-width img{
-    width:100%
+    width:70%
 }
 
-.top-banner{
-    background-image: url('images/top-banner.png');
-    background-repeat: no-repeat;
+.second-banner p{
+ width:60%;
 }
 
-.link-button{
-    text-decoration: none;
-    background-image: linear-gradient(45deg,lightsalmon,tomato);
-    padding: 10px 20px;
-    border: radius 5px;
-    color: white;
-    font-weight: 700;
+.custom-button {
+	text-decoration: none;
+	background-image: linear-gradient(1800deg,lightsalmon,tomato);
+	padding: 10px 20px;
+	border: radius 5px;
+	color: white;
+	font-weight: 700;
+    border-radius: 5px;
+    transition:500ms;
+    display:inline-block;
 }
 
-.dream-banner{
-    background-image: url('images/dream-bg.png');
-    background-repeat: no-repeat;
-    background-position: right;
+.custom-button:hover{
+    transform: scale(1.2);
+} 
+
+.third-banner p{
+   width:60%;
+}
+
+.fourth-banner{
+    clear: both;
+    min-height: 500px;
+    background:rgba(0,0,0,0.05);
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 0;
+}
+.project-section{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.small-box {
+	width: 25%;
+	float: left;
+	background: white;
+	margin: 2%;
+	padding: 2%;
+	border-radius: 10px;
+	box-shadow: 5px 4px 9px rgba(0,0,0,0.15);
+}
+.smal-box a{
+    display: block;
+}
+
+.small-box img{
+    width: 100%;;
+}
+.small-box a{
+    display: block;
+}
+.small-box a h4 {
+	padding: 10px 0;
+}
+
+.center{
+    text-align: center;
+    clear: both;
+}
+
+.fifth-banner {
+	width: 70%;
+	margin: 100px auto;
+	background-image: linear-gradient(180deg,rgb(72, 0, 167),rgb(47, 0, 85));
+	min-height: 100px;
+	border-radius: 10px;
+	padding: 50px 0;
+	color: white;
+}
+.fifth-banner h1{
+    margin:0
+}
+.fifth-banner a{
+    margin-top:15px;
+    float: right;
+    margin-right:100px
+}
+
+footer{
+    text-align: center;
+}
+
+footer img{
+    width:30px
+}
+
+footer h2{
+    font-weight: bold;;
 }
